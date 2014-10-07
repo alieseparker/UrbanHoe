@@ -13,4 +13,5 @@ AllCops:
     - db/schema.rb
     - db/migrate/*
     - vendor/bundle
+    - vendor/**/*
     - bin/**/*

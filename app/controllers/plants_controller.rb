@@ -1,5 +1,4 @@
 class PlantsController < ApplicationController
-
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_plant, only: [:show, :edit, :update, :destroy]
 
@@ -41,7 +40,8 @@ class PlantsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+
+  # Use callbacks to share common setup or constraints between actions.
   def set_plant
     @plant = Plant.find(params[:id])
   end
